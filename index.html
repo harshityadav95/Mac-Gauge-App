@@ -9,8 +9,8 @@
   <title>Mac Gauge — A little insight. A lot more focus.</title>
   <link rel="icon" sizes="32x32" href="assets/favicon.png">
   <link rel="preload" href="assets/fonts/geist-regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20261025">
-  <script src="script.js?v=20261025" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261025-appearance">
+  <script src="script.js?v=20261025-appearance" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -39,6 +39,36 @@
       <div class="section-heading"><div><p class="eyebrow">A FRESH PERSPECTIVE ON YOUR MAC</p><h2>Less wondering.<br>More <span class="muted">getting on with it.</span></h2></div><p class="section-deck">Small gauges. Useful details.<br>A closer look, whenever you need one.</p></div>
       <div class="feature-tabs" role="tablist" aria-label="Explore Mac Gauge features"><button id="feature-tab-0" role="tab" aria-selected="true" aria-controls="feature-panel" data-feature="0"><img src="assets/icons/cpu.svg" alt=""> Know your system</button><button id="feature-tab-1" role="tab" aria-selected="false" aria-controls="feature-panel" tabindex="-1" data-feature="1"><img src="assets/icons/terminal-window.svg" alt=""> Built for your workflow</button><button id="feature-tab-2" role="tab" aria-selected="false" aria-controls="feature-panel" tabindex="-1" data-feature="2"><img src="assets/icons/shield-check.svg" alt=""> Personal stays personal</button></div>
       <div id="feature-panel" class="feature-panel" role="tabpanel" aria-labelledby="feature-tab-0" tabindex="0"><h3 id="feature-title">A little context changes everything.</h3><p id="feature-copy">Is an app working hard, or is your Mac just warming up? Follow processor activity, memory pressure and network traffic without leaving what you’re doing.</p><span id="feature-detail" class="micro">LIVE READINGS · MENU BAR WIDGETS · AT-A-GLANCE INSIGHTS</span></div>
+      <section id="menu-bar" class="menu-bar-feature" aria-labelledby="menu-bar-title">
+        <div class="menu-bar-feature-heading">
+          <div><p class="eyebrow">RIGHT IN YOUR MENU BAR</p><h3 id="menu-bar-title">Small symbols. A clearer picture.</h3></div>
+          <p>Processor, graphics, memory, disk, temperature, network and open ports. In the Mac app, hover over a symbol to see its name. Keep the readings close without filling your menu bar with labels.</p>
+        </div>
+        <figure class="menu-bar-figure">
+          <a class="menu-bar-image-link" href="assets/menu-bar-features.webp" target="_blank" rel="noopener" aria-label="Open the Mac Gauge menu bar illustration at full size in a new tab">
+            <img src="assets/menu-bar-features.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Mac Gauge menu bar illustration with symbols for ports, network download and upload, temperature, disk, memory, graphics and processor activity. Enlarged details show sample readings and a CPU hover label.">
+          </a>
+          <figcaption><span>Menu bar feature illustration · Example readings</span><a href="assets/menu-bar-features.webp" target="_blank" rel="noopener">Open full-size image <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></figcaption>
+        </figure>
+      </section>
+      <section id="appearance" class="menu-bar-feature appearance-feature" aria-labelledby="appearance-title">
+        <div class="menu-bar-feature-heading">
+          <div><p class="eyebrow">A CLOSER LOOK AT MAC GAUGE</p><h3 id="appearance-title">At home in every light.</h3></div>
+          <p>A clear view of processor activity, memory pressure and the apps at work. Explore the overview and compact memory panel in Light and Dark appearance. The Mac app can also follow your system theme.</p>
+        </div>
+        <div class="appearance-tabs" role="tablist" aria-label="App appearance preview">
+          <button id="appearance-tab-light" type="button" role="tab" aria-selected="true" aria-controls="appearance-panel" data-appearance="light">Light</button>
+          <button id="appearance-tab-dark" type="button" role="tab" aria-selected="false" aria-controls="appearance-panel" tabindex="-1" data-appearance="dark">Dark</button>
+        </div>
+        <div id="appearance-panel" role="tabpanel" aria-labelledby="appearance-tab-light" tabindex="0">
+          <figure class="menu-bar-figure">
+            <a id="appearance-image-link" class="menu-bar-image-link appearance-image-link" href="assets/app-overview-light.webp" target="_blank" rel="noopener" aria-label="Open the light appearance illustration at full size in a new tab">
+              <img id="appearance-image" src="assets/app-overview-light.webp" width="1568" height="1003" loading="lazy" decoding="async" alt="Light appearance design illustration of Mac Gauge, showing CPU, memory and GPU gauges, a usage chart, top processes, system readings and a compact memory panel. Sample readings are illustrative.">
+            </a>
+            <figcaption><span id="appearance-caption" aria-live="polite">Light appearance · Design illustration with sample readings</span><a id="appearance-full-size" href="assets/app-overview-light.webp" target="_blank" rel="noopener">Open full-size image <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></figcaption>
+          </figure>
+        </div>
+      </section>
       <div id="demo" class="demo-wrap">
         <div class="demo-caption"><span class="eyebrow">TAKE A LOOK UNDER THE SURFACE</span><span><span class="status-dot"></span> Interactive preview · Simulated readings</span></div>
         <div class="monitor-window">

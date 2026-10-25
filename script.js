@@ -31,6 +31,18 @@ function wireTabs(selector, activate) {
     });
   });
 }
+wireTabs('[data-appearance]', button => {
+  const theme = button.dataset.appearance === 'dark' ? 'dark' : 'light';
+  const title = theme === 'dark' ? 'Dark' : 'Light';
+  const source = `assets/app-overview-${theme}.webp`;
+  $('#appearance-image').src = source;
+  $('#appearance-image').alt = `${title} appearance design illustration of Mac Gauge, showing CPU, memory and GPU gauges, a usage chart, top processes, system readings and a compact memory panel. Sample readings are illustrative.`;
+  $('#appearance-image-link').href = source;
+  $('#appearance-image-link').setAttribute('aria-label', `Open the ${theme} appearance illustration at full size in a new tab`);
+  $('#appearance-full-size').href = source;
+  $('#appearance-caption').textContent = `${title} appearance · Design illustration with sample readings`;
+  $('#appearance-panel').setAttribute('aria-labelledby', button.id);
+});
 wireTabs('[data-feature]', button => {
   const [title, copy, detail] = features[Number(button.dataset.feature)];
   $('#feature-title').textContent = title;

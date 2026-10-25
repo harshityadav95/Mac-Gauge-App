@@ -18,6 +18,10 @@ Product website: https://harshityadav.in/Mac-Gauge-App/. Apple Silicon and macOS
 
 ## Assets and provenance
 
+- `assets/app-overview-dark.webp` is the user-supplied dashboard illustration. `assets/app-overview-light.webp` is an Image Gen edit of that illustration into Light appearance, preserving the composition and sample data. The appearance showcase defaults to Light and includes keyboard-accessible Light/Dark tabs and full-size image links. Both are design illustrations, not live hardware captures.
+
+- `assets/menu-bar-features.webp` is the user-supplied menu-bar feature illustration, optimized from the provided PNG without cropping. It appears above the interactive demo, includes a sample-readings caption, and opens full size for closer inspection.
+
 - Existing `assets/app-icon.png` and `assets/favicon.png` retain Mac Gauge branding.
 - Fonts are reused from the local Lifafa reference with their OFL licenses under `assets/fonts/`.
 - Phosphor regular icons are vendored under `assets/icons/`, with MIT license.
